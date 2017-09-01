@@ -2,7 +2,7 @@
 
 namespace f;
 
-class arr
+abstract class arr
 {
   /***
    * @param array $array

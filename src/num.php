@@ -2,7 +2,7 @@
 
 namespace f;
 
-class num
+abstract class num
 {
     /***
      * @param int $integer

@@ -1,10 +1,10 @@
 <?php
 
-namespace f\intl;
+namespace f\intl\ir;
 
 use f\num;
 
-class fa
+abstract class ir
 {
     /**
      * National ID validator

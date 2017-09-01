@@ -2,7 +2,7 @@
 
 namespace f;
 
-class str
+abstract class str
 {
 
     public static function zwjRemover($string)

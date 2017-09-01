@@ -2,7 +2,7 @@
 
 namespace f;
 
-class dev
+abstract class dev
 {
     /**
      * Return the value from an associative array or an object.

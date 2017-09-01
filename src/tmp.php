@@ -2,10 +2,12 @@
 
 namespace f;
 
-class tmp
+abstract class tmp
 {
   public static function elapsed($time, $date = false)
   {
+    $numberOfUnits = $text = null;
+
     if ($date) {
       $time = time() - $time;
     } // to get the time since that moment

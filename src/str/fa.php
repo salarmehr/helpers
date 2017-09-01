@@ -4,7 +4,7 @@ namespace f\str;
 
 use f\str;
 
-class fa extends str
+abstract class fa extends str
 {
     public static function normalize($string)
     {

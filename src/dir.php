@@ -2,7 +2,7 @@
 
 namespace f;
 
-class dir
+abstract class dir
 {
     public static function mergeTextFiles($root, $outputPath = null, $debug = false)
     {
