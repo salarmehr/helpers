@@ -1,0 +1,37 @@
+##### For all projects
+
+# .idea folder
+.idea/*
+!.idea/vcs.xml
+!.idea/encodings.xml
+!.idea/codeStyleSettings.xml
+!.idea/dictionaries
+!.idea/copyright
+!.idea/misc.xml
+!.idea/sqldialects.xml
+# end of .idea folder
+
+**/bower_components
+**/*.css.map
+**/log
+**/node_modules
+**/temp/
+*-temp*
+*.temp.*
+*.komodoproject
+*.sublime-project
+*.sublime-workspace
+.buildpath
+.DS_Store*
+.env
+.project
+.settings
+_ide_helper.json
+ehthumbs.db
+Homestead.yaml
+Icon?
+public/file-server/
+Thumbs.db
+vendor/
+
+#### This projct

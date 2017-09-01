@@ -1,0 +1,13 @@
+{
+  "name": "salarmehr/helpers",
+  "description": "Iranian Bank Payment Gateway",
+  "license": "Proprietary",
+  "version": "dev-master",
+    "authors": [
+        {
+            "name": "Reza Salarmehr",
+            "email": "salarmehr@gmail.com"
+        }
+    ],
+    "require": {}
+}
