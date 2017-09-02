@@ -107,4 +107,40 @@ abstract class arr
   {
     return array_keys($arr) !== range(0, count($arr) - 1);
   }
+
+  /**
+   * if receive an associative array puts it in another array otherwise returns.
+   * @param $items
+   * @return array
+   */
+  function toIndexArray($items)
+  {
+    if ($items && self::isAssoc($items)) {
+      return [$items];
+    }
+
+    return $items;
+  }
+
+  /**
+   * checks a value in an array with this format
+   * [
+   * 'publish'=>[1,3,5]
+   * 'full'=>[4,9]
+   * ]
+   * in this example if $needle==4 the function returns 'full'
+   * @param array            $haystack
+   * @param string|array|int $needle
+   * @return bool|int|string
+   */
+  function findKey(array $haystack, $needle)
+  {
+    foreach ($haystack as $k => $v) {
+      if ((boolean)count(array_intersect((array)$needle, (array)$v))) {
+        return $k;
+      }
+    }
+
+    return false;
+  }
 }
