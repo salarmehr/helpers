@@ -3,11 +3,18 @@
   "description": "Iranian Bank Payment Gateway",
   "license": "Proprietary",
   "version": "dev-master",
-    "authors": [
-        {
-            "name": "Reza Salarmehr",
-            "email": "salarmehr@gmail.com"
-        }
+  "authors": [
+    {
+      "name": "Reza Salarmehr",
+      "email": "salarmehr@gmail.com"
+    }
+  ],
+  "require": {},
+  "autoload": {
+    "files": [
     ],
-    "require": {}
+    "psr-4": {
+      "f\\": "src/"
+    }
+  }
 }
