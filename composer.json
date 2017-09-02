@@ -1,8 +1,8 @@
 {
   "name": "salarmehr/helpers",
-  "description": "Iranian Bank Payment Gateway",
+  "description": "A collection of essential PHP helper functions for everyday programming.",
   "license": "Proprietary",
-  "version": "dev-master",
+  "version": "1",
   "authors": [
     {
       "name": "Reza Salarmehr",
