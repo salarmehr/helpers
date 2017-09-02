@@ -1,6 +1,6 @@
 <?php
 
-namespace f\intl\ir;
+namespace f\intl;
 
 use f\num;
 
