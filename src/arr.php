@@ -113,7 +113,7 @@ abstract class arr
    * @param $items
    * @return array
    */
-  function toIndexArray($items)
+  public static function toIndexArray($items)
   {
     if ($items && self::isAssoc($items)) {
       return [$items];
@@ -133,7 +133,7 @@ abstract class arr
    * @param string|array|int $needle
    * @return bool|int|string
    */
-  function findKey(array $haystack, $needle)
+  public static function findKey(array $haystack, $needle)
   {
     foreach ($haystack as $k => $v) {
       if ((boolean)count(array_intersect((array)$needle, (array)$v))) {
