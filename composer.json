@@ -1,7 +1,7 @@
 {
   "name": "salarmehr/helpers",
   "description": "A collection of essential PHP helper functions for everyday programming.",
-  "license": "Proprietary",
+  "license": "MIT",
   "version": "1",
   "authors": [
     {
