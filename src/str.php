@@ -87,6 +87,13 @@ abstract class str
 
   public static function decamlize($string)
   {
-    return ucwords(preg_replace('/(?!^)[A-Z]{2,}(?=[A-Z][a-z])|[A-Z][a-z]/', ' $0', $string));
+    $re = '/(?#! splitCamelCase Rev:20140412)
+    # Split camelCase "words". Two global alternatives. Either g1of2:
+      (?<=[a-z])      # Position is after a lowercase,
+      (?=[A-Z])       # and before an uppercase letter.
+    | (?<=[A-Z])      # Or g2of2; Position is after uppercase,
+      (?=[A-Z][a-z])  # and before upper-then-lower case.
+    /x';
+    return preg_replace($re,' ',$string);
   }
 }

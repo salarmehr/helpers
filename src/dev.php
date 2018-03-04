@@ -41,14 +41,13 @@ abstract class dev
     }
 
     /***
-     * The public static function is used in log function
      * @param      $str
      * @param bool $now
      */
-    public static function strLog($str, $now = false)
+    private static function strLog($str, $now = false)
     {
         if ($now) {
-            echo "<script type='text/javascript'>\n";
+            echo "<script>\n";
             echo "//<![CDATA[\n";
             echo "console.log(", json_encode($str), ");\n";
             echo "//]]>\n";
@@ -101,8 +100,10 @@ abstract class dev
 
     /**
      * Check if a user request parameter is provided e.g. un-sent values: null,'',[], ['',null]
+     * primary useful to treat 0 as a truly value.
      * @param $param
      * @return bool
+     * @todo return false for [[]] or [[[[]]]] by a recursive implementation.
      */
     public static function exists($param): bool
     {
@@ -110,5 +111,4 @@ abstract class dev
             return is_array($param) || trim($param) !== '';
         });
     }
-
 }
