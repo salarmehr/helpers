@@ -39,7 +39,7 @@ abstract class fs // file system
         elseif ($bytes >= 1024) {
             return number_format($bytes / 1024, 2) . ' KB';
         }
-        elseif ($bytes > 1) {
+        elseif ($bytes >= 1) {
             return $bytes . ' B';
         }
 
