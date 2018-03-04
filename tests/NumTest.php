@@ -1,7 +1,5 @@
 <?php
 
-require __DIR__ . '/../src/num.php';
-
 class NumTest extends PHPUnit\Framework\TestCase
 {
 	/**
@@ -21,7 +19,6 @@ class NumTest extends PHPUnit\Framework\TestCase
             [7       ,'VII']
         ];
     }
-
 
 
     /**
@@ -77,6 +74,4 @@ class NumTest extends PHPUnit\Framework\TestCase
             ['VII'          ,7   ]
         ];
     }
-
-
 }

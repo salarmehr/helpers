@@ -1,7 +1,5 @@
 <?php
 
-require __DIR__ . '/../src/http.php';
-
 class HttpTest extends PHPUnit\Framework\TestCase
 {
 

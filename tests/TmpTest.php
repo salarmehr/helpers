@@ -1,7 +1,5 @@
 <?php
 
-require __DIR__ . '/../src/tmp.php';
-
 class TmpTest extends PHPUnit\Framework\TestCase
 {
 
@@ -24,7 +22,4 @@ class TmpTest extends PHPUnit\Framework\TestCase
 			[  1212345678   ,  true  ,  time()-1212345678 ]
         ];
     }
-
-
-
 }

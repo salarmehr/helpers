@@ -6,13 +6,31 @@ class DevTest extends PHPUnit\Framework\TestCase
 {
 
 
-    public function testEchoLn()
-    {
-        $this->expectOutputString("book" ."\n");
+  public function testEchoLn()
+  {
+    f\dev::echoLn('book');
+    $this->expectOutputString('book'.PHP_EOL);
+  }
 
-        f\dev::echoLn('book');
-    }
-	
+  /**
+   * @dataProvider existsProvider
+   */
+  public function testExists($value, $expected)
+  {
+    $actual = \f\dev::exists($value);
+    $this->assertEquals($expected, $actual);
+  }
 
+  public function existsProvider()
+  {
+    return [
+      [0, true],
+      [true, true],
+      [null, false],
+      ['', false],
+      [[], false],
+      [false, false],
+    ];
+  }
 
 }	
